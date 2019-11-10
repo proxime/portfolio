@@ -9,7 +9,8 @@
     "client": "npm start --prefix client",
     "build-client": "npm run build --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "prod": "concurrently \"npm start\" \"npm run build-client\""
+    "prod": "concurrently \"npm start\" \"npm run build-client\"",
+    "heroku-postbuild": "npm run build-client"
   },
   "author": "Norbert Kułak",
   "license": "ISC",
