@@ -1,0 +1,88 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $navbar-color;
+  z-index: 100;
+  height: $navbar-height;
+  padding: 10px;
+  &__container {
+    display: flex;
+    height: 100%;
+  }
+  &__title {
+    padding: 0 10px;
+  }
+  &__name {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    p:last-child {
+      letter-spacing: 3px;
+      font-weight: normal;
+    }
+  }
+  &__mobile-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    .hamburger {
+      opacity: 1 !important;
+      outline: none;
+    }
+    .hamburger-inner,
+    .hamburger-inner::after,
+    .hamburger-inner::before {
+      background-color: white !important;
+    }
+  }
+  &__desktop {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  top: $navbar-height;
+  left: 0;
+  width: 100%;
+  background-color: $navbar-color;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-in;
+  &.active {
+    height: 201px;
+  }
+  &__list {
+    padding-bottom: 10px;
+  }
+  &__item {
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
+  &__links {
+    padding-bottom: 10px;
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__link {
+    font-size: 3rem;
+    margin: 0 3px;
+    a {
+      display: block;
+      color: white;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.letter-anim-container {
+  background-color: $main-color;
+  padding: 20px;
+}
+
+.letter-anim-container svg {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.belt {
+  position: relative;
+  visibility: hidden;
+}

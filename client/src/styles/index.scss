@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+@import 'variables';
+@import 'navbar';
+@import 'head-anim';
+
+html {
+  font-size: $root-font-size;
+  font-family: $font-family;
+}
+
+body {
+  padding-top: $navbar-height;
+}
