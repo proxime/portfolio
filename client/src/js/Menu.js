@@ -37,6 +37,7 @@ class Menu {
       item.addEventListener('click', () => {
         this.scrollToSection(item.dataset.section);
         this.mobileNavbar.classList.remove('active');
+        this.hamburger.classList.remove('is-active');
       }),
     );
   }
