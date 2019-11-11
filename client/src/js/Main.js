@@ -15,7 +15,6 @@ class Main {
 
   moveAboutIcon(icon, e) {
     const aboutEl = this.about.querySelector('.about__container');
-
     const iconPos = {
       x: icon.offsetLeft + aboutEl.offsetLeft,
       y: icon.offsetTop + aboutEl.offsetTop,
