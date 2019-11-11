@@ -1,0 +1,86 @@
+.about {
+  background-color: $secondary-color;
+  color: white;
+  &__container {
+    position: relative;
+    width: 100%;
+    max-width: $root-page-width;
+    margin: 0 auto;
+    padding: 1.5 * $main-sections-padding $main-sections-padding;
+    @include mq(l) {
+      padding: 3 * $main-sections-padding 2 * $main-sections-padding;
+    }
+  }
+  &__text {
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: aboutTextAnim 0.5s 0.65s linear forwards;
+    z-index: 2;
+  }
+  &__title {
+    position: relative;
+    font-family: $special-font;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__name {
+    position: relative;
+    z-index: 2;
+    font-size: 2.4rem;
+    @include mq(l) {
+      font-size: 3.5rem;
+    }
+  }
+  &__hash {
+    position: absolute;
+    left: -22px;
+    top: -22px;
+    width: 60px;
+    opacity: 0.7;
+    @include mq(l) {
+      width: 80px;
+      top: -28px;
+      left: -27px;
+    }
+  }
+  &__content {
+    padding: 10px;
+    font-size: 1.7rem;
+    max-width: 800px;
+    @include mq(l) {
+      font-size: 2rem;
+      padding-top: 20px;
+    }
+  }
+  &__paragraph {
+    margin-bottom: 15px;
+  }
+  &__bg-icon {
+    display: none;
+    width: 40%;
+    position: absolute;
+    right: $main-sections-padding;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    opacity: 0;
+    animation: aboutIcon 0.5s 0.65s linear forwards;
+    @include mq(l) {
+      display: block;
+    }
+  }
+}
+
+@keyframes aboutTextAnim {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aboutIcon {
+  100% {
+    opacity: 0.6;
+  }
+}

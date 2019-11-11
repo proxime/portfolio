@@ -12,6 +12,7 @@ ul {
 @import 'mixins';
 @import 'navbar';
 @import 'head-anim';
+@import 'about';
 
 html {
   font-size: $root-font-size;
@@ -23,4 +24,8 @@ body {
   @include mq(l) {
     padding-top: $navbar-height-l;
   }
+}
+
+.orange {
+  color: $main-font-color;
 }
