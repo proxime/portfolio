@@ -7,12 +7,18 @@
   z-index: 100;
   height: $navbar-height;
   padding: 10px;
+  @include mq(l) {
+    height: $navbar-height-l;
+  }
   &__container {
     display: flex;
     height: 100%;
   }
   &__title {
-    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
   }
   &__name {
     color: white;
@@ -20,6 +26,9 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: 300;
+    @include mq(l) {
+      font-size: 2.2rem;
+    }
     p:last-child {
       letter-spacing: 3px;
       font-weight: normal;
@@ -30,6 +39,9 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    @include mq(l) {
+      display: none;
+    }
     cursor: pointer;
     .hamburger {
       opacity: 1 !important;
@@ -43,6 +55,56 @@
   }
   &__desktop {
     display: none;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    height: 100%;
+    @include mq(l) {
+      display: flex;
+    }
+  }
+  &__list {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__item {
+    font-size: 2rem;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: color 0.25s ease-in-out;
+    &:hover {
+      color: $main-font-color;
+    }
+  }
+  &__links {
+    position: absolute;
+    right: 40px;
+    height: 100%;
+    ul {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+  &__link {
+    a {
+      display: block;
+      color: white;
+      font-size: 3rem;
+      padding: 5px;
+      margin: 0 3px;
+    }
   }
 }
 
@@ -55,6 +117,9 @@
   height: 0;
   overflow: hidden;
   transition: height 0.2s ease-in;
+  @include mq(l) {
+    display: none;
+  }
   &.active {
     height: 201px;
   }
@@ -84,5 +149,19 @@
       padding: 5px 10px;
       cursor: pointer;
     }
+  }
+}
+
+.fb {
+  transition: color 0.25s ease-in-out;
+  &:hover {
+    color: #3b5998;
+  }
+}
+
+.git {
+  transition: color 0.25s ease-in-out;
+  &:hover {
+    color: #bebfc1;
   }
 }

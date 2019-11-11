@@ -6,3 +6,19 @@ $main-color: #2c3e50;
 $secondary-color: #34495e;
 $navbar-color: #202d3a;
 $navbar-height: 60px;
+$navbar-height-l: 80px;
+
+$breakpoints: (
+  s: (
+    min-width: 460px,
+  ),
+  m: (
+    min-width: 800px,
+  ),
+  l: (
+    min-width: 1024px,
+  ),
+  xl: (
+    min-width: 1200px,
+  ),
+);
