@@ -3,7 +3,23 @@ import aboutBgIcon from '../images/programming-icon.svg';
 
 class Main {
   constructor() {
+    // Sections
     this.about = document.querySelector('.about');
+
+    // About Icon Animation
+    this.mousePos = {
+      x: null,
+      y: null,
+    };
+    this.aboutIconPos = {
+      x: null,
+      y: null,
+    };
+    this.icon = null;
+    this.aboutIconOffset = {
+      x: 0,
+      y: 0,
+    };
   }
 
   addSectionImage(section) {
@@ -13,46 +29,66 @@ class Main {
     document.querySelector(`.${section.className}__title`).appendChild(img);
   }
 
-  moveAboutIcon(icon, e) {
+  moveAboutIcon(e) {
     const aboutEl = this.about.querySelector('.about__container');
-    const iconPos = {
-      x: icon.offsetLeft + aboutEl.offsetLeft,
-      y: icon.offsetTop + aboutEl.offsetTop,
+    this.aboutIconPos = {
+      x: this.icon.offsetLeft + aboutEl.offsetLeft,
+      y: this.icon.offsetTop + aboutEl.offsetTop,
     };
 
-    const mousePos = {
+    this.mousePos = {
       x: e.clientX,
       y: e.clientY + window.scrollY,
     };
+  }
+
+  aboutIconAnimation() {
+    const speed = 0.5;
 
     const diff = {
-      x: iconPos.x - mousePos.x,
-      y: iconPos.y - mousePos.y,
+      x: (this.mousePos.x - this.aboutIconPos.x) * 0.02,
+      y: (this.mousePos.y - this.aboutIconPos.y) * 0.04,
     };
 
-    const transformX = -diff.x * 0.02;
-    const transformY = (function() {
-      if (-diff.y * 0.02 > 10) {
-        return 10;
-      } else if (-diff.y * 0.02 < -10) {
-        return -10;
-      }
-      return -diff.y * 0.02;
-    })();
+    if (diff.x > 20) diff.x = 20;
+    else if (diff.x < -20) diff.x = -20;
 
-    icon.style.transform = `translate(${transformX}px, calc(-50% + ${transformY}px))`;
+    if (diff.y > 20) diff.y = 20;
+    else if (diff.y < -20) diff.y = -20;
+
+    if (this.mousePos.x < this.aboutIconPos.x) {
+      if (this.aboutIconOffset.x > diff.x) this.aboutIconOffset.x -= speed;
+      else if (this.aboutIconOffset.x < diff.x) this.aboutIconOffset.x += speed;
+    } else if (this.mousePos.x > this.aboutIconPos.x) {
+      if (this.aboutIconOffset.x > diff.x) this.aboutIconOffset.x -= speed;
+      else if (this.aboutIconOffset.x < diff.x) this.aboutIconOffset.x += speed;
+    }
+
+    if (this.mousePos.y < this.aboutIconPos.y) {
+      if (this.aboutIconOffset.y > diff.y) this.aboutIconOffset.y -= speed;
+      if (this.aboutIconOffset.y < diff.y) this.aboutIconOffset.y += speed;
+    } else if (this.mousePos.y > this.aboutIconPos.y) {
+      if (this.aboutIconOffset.y < diff.y) this.aboutIconOffset.y += speed;
+      if (this.aboutIconOffset.y > diff.y) this.aboutIconOffset.y -= speed;
+    }
+
+    this.icon.style.transform = `translate(${this.aboutIconOffset.x}px, calc(-50% + ${this.aboutIconOffset.y}px))`;
+
+    requestAnimationFrame(() => this.aboutIconAnimation());
   }
 
   handleAbout() {
     const aboutEl = this.about.querySelector('.about__container');
 
     this.addSectionImage(this.about);
-    const icon = new Image();
-    icon.src = aboutBgIcon;
-    icon.className = 'about__bg-icon';
-    aboutEl.appendChild(icon);
+    this.icon = new Image();
+    this.icon.src = aboutBgIcon;
+    this.icon.className = 'about__bg-icon';
+    aboutEl.appendChild(this.icon);
 
-    document.addEventListener('mousemove', e => this.moveAboutIcon(icon, e));
+    document.addEventListener('mousemove', e => this.moveAboutIcon(e));
+
+    requestAnimationFrame(() => this.aboutIconAnimation());
   }
 
   init() {
