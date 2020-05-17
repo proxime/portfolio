@@ -6,6 +6,7 @@ class Main {
     // Sections
     this.about = document.querySelector('.about');
     this.skills = document.querySelector('.skills');
+    this.projects = document.querySelector('.projects');
 
     // About Icon Animation
     this.mousePos = {
@@ -96,9 +97,14 @@ class Main {
     this.addSectionImage(this.skills);
   }
 
+  handleProjects() {
+    this.addSectionImage(this.projects);
+  }
+
   init() {
     this.handleAbout();
     this.handleSkills();
+    this.handleProjects();
   }
 }
 

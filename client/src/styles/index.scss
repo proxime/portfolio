@@ -14,6 +14,7 @@ ul {
 @import 'head-anim';
 @import 'about';
 @import 'skills';
+@import 'projects';
 
 html {
   font-size: $root-font-size;
@@ -29,4 +30,8 @@ body {
 
 .orange {
   color: $main-font-color;
+}
+
+.main-color {
+  color: $main-color;
 }
