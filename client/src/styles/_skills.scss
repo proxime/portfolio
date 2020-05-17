@@ -1,0 +1,175 @@
+.skills {
+  position: relative;
+  background-color: $main-color;
+  color: white;
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include mq(m) {
+      min-width: 500px;
+      width: 40%;
+    }
+  }
+  &__bg-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/skills-bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0.7);
+    @include mq(m) {
+      background-position: center left;
+      filter: grayscale(0.5);
+    }
+  }
+  &__bg-gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(44, 62, 80, 1) 0%,
+      rgba(44, 62, 80, 0) 100%
+    );
+  }
+  &__container {
+    position: relative;
+    width: 100%;
+    max-width: $root-page-width;
+    margin: 0 auto;
+    padding: 1.5 * $main-sections-padding $main-sections-padding;
+    @include mq(l) {
+      padding: 3 * $main-sections-padding 2 * $main-sections-padding;
+    }
+  }
+  &__title {
+    position: relative;
+    font-family: $special-font;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__name {
+    position: relative;
+    z-index: 2;
+    font-size: 2.4rem;
+    @include mq(l) {
+      font-size: 3.5rem;
+    }
+  }
+  &__hash {
+    position: absolute;
+    left: -22px;
+    top: -22px;
+    width: 60px;
+    opacity: 0.7;
+    @include mq(l) {
+      width: 80px;
+      top: -28px;
+      left: -27px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  &__item {
+    padding: 10px;
+    width: 50%;
+    max-width: 200px;
+    @include mq(l) {
+      margin: 0 10px;
+    }
+  }
+  &__item-image {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 10px;
+    img {
+      position: absolute;
+      width: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  &__html {
+    box-shadow: -2px 2px 0 2px #e34f26;
+  }
+  &__css {
+    box-shadow: -2px 2px 0 2px #1572b6;
+  }
+  &__js {
+    box-shadow: -2px 2px 0 2px #f7df1e;
+  }
+  &__rwd {
+    box-shadow: -2px 2px 0 2px black;
+  }
+  &__react {
+    box-shadow: -2px 2px 0 2px #61dafb;
+  }
+  &__redux {
+    box-shadow: -2px 2px 0 2px #764abc;
+  }
+  &__rest {
+    box-shadow: -2px 2px 0 2px green;
+  }
+  &__sass {
+    box-shadow: -2px 2px 0 2px #cc6699;
+  }
+  &__webpack {
+    box-shadow: -2px 2px 0 2px #8dd6f9;
+  }
+  &__git {
+    box-shadow: -2px 2px 0 2px #f05032;
+  }
+  &__node {
+    box-shadow: -2px 2px 0 2px #339933;
+  }
+  &__npm {
+    box-shadow: -2px 2px 0 2px #cb3837;
+  }
+  &__express {
+    box-shadow: -2px 2px 0 2px black;
+    img {
+      width: 70%;
+    }
+  }
+  &__mongodb {
+    box-shadow: -2px 2px 0 2px #47a248;
+    img {
+      width: 75%;
+    }
+  }
+  &__socket {
+    box-shadow: -2px 2px 0 2px #010101;
+  }
+  &__firebase {
+    box-shadow: -2px 2px 0 2px #ffca28;
+  }
+  &__item-name {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    @include mq(l) {
+      font-size: 2rem;
+    }
+  }
+}

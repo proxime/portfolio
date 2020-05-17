@@ -5,6 +5,7 @@ class Main {
   constructor() {
     // Sections
     this.about = document.querySelector('.about');
+    this.skills = document.querySelector('.skills');
 
     // About Icon Animation
     this.mousePos = {
@@ -86,13 +87,18 @@ class Main {
     this.icon.className = 'about__bg-icon';
     aboutEl.appendChild(this.icon);
 
-    document.addEventListener('mousemove', e => this.moveAboutIcon(e));
+    document.addEventListener('mousemove', (e) => this.moveAboutIcon(e));
 
     requestAnimationFrame(() => this.aboutIconAnimation());
   }
 
+  handleSkills() {
+    this.addSectionImage(this.skills);
+  }
+
   init() {
     this.handleAbout();
+    this.handleSkills();
   }
 }
 

@@ -10,11 +10,14 @@ $navbar-color: #202d3a;
 $navbar-height: 60px;
 $navbar-height-l: 80px;
 
-$main-sections-padding: 40px;
+$main-sections-padding: 35px;
 
 $breakpoints: (
   s: (
     min-width: 460px,
+  ),
+  xm: (
+    min-width: 600px,
   ),
   m: (
     min-width: 800px,
