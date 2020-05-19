@@ -14,4 +14,5 @@
 .belt {
   position: relative;
   visibility: hidden;
+  will-change: transform;
 }

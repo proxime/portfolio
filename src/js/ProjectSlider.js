@@ -68,8 +68,10 @@ class ProjectSlider {
   changeSlide(slideNumber) {
     this.actuallSlide = slideNumber;
 
-    this.container.style.left = `${
-      slideNumber === 0 ? '0' : '-' + slideNumber + '00%'
+    this.container.style.transform = `${
+      slideNumber === 0
+        ? 'translateX(0)'
+        : 'translateX(-' + slideNumber + '00%)'
     }`;
     this.switches.forEach((switchEl, index) => {
       if (index === slideNumber) {
