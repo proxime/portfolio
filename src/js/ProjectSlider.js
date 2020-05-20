@@ -1,3 +1,5 @@
+import scroll from './Scroll';
+
 import chinczykImage1 from '../images/slider-chinczyk-1.PNG';
 import chinczykImage2 from '../images/slider-chinczyk-2.PNG';
 import chinczykImage3 from '../images/slider-chinczyk-3.PNG';
@@ -5,10 +7,36 @@ import chinczykImage3 from '../images/slider-chinczyk-3.PNG';
 import i20481 from '../images/slider-2048-1.PNG';
 import i20482 from '../images/slider-2048-2.PNG';
 
+import airImage1 from '../images/slider-air-1.PNG';
+import airImage2 from '../images/slider-air-2.PNG';
+import airImage3 from '../images/slider-air-3.PNG';
+
+import memtastyImage1 from '../images/slider-memtasty-1.PNG';
+import memtastyImage2 from '../images/slider-memtasty-2.PNG';
+import memtastyImage3 from '../images/slider-memtasty-3.PNG';
+
+import taskerImage1 from '../images/slider-tasker-1.PNG';
+import taskerImage2 from '../images/slider-tasker-2.PNG';
+import taskerImage3 from '../images/slider-tasker-3.PNG';
+
+import talkerImage1 from '../images/slider-talker-1.PNG';
+import talkerImage2 from '../images/slider-talker-2.PNG';
+
 const chinczykImages = [chinczykImage1, chinczykImage2, chinczykImage3];
 const game2048Images = [i20481, i20482];
+const airImages = [airImage1, airImage2, airImage3];
+const memtastyImages = [memtastyImage1, memtastyImage2, memtastyImage3];
+const taskerImages = [taskerImage1, taskerImage2, taskerImage3];
+const talkerImages = [talkerImage1, talkerImage2];
 
-const images = [chinczykImages, game2048Images];
+const images = [
+  chinczykImages,
+  game2048Images,
+  airImages,
+  memtastyImages,
+  taskerImages,
+  talkerImages,
+];
 
 class ProjectSlider {
   constructor() {
@@ -66,7 +94,10 @@ class ProjectSlider {
   }
 
   changeSlide(slideNumber) {
-    this.actuallSlide = slideNumber;
+    scroll(document.querySelector('.projects'), 300, -this.slider.offsetTop);
+    this.container.style.transition = `transform ${
+      Math.abs(this.actuallSlide - slideNumber) * 0.2
+    }s ease-in`;
 
     this.container.style.transform = `${
       slideNumber === 0
@@ -80,6 +111,7 @@ class ProjectSlider {
         switchEl.classList.remove('active');
       }
     });
+    this.actuallSlide = slideNumber;
   }
 
   createSliderSwitches() {

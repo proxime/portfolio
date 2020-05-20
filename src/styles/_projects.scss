@@ -49,11 +49,12 @@
     position: relative;
     left: 0;
     will-change: transform;
-    transition: transform 0.2s ease-in;
   }
   &__slide {
     width: 100%;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
   }
   &__title {
     text-align: center;
@@ -61,6 +62,12 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+  }
+  &__desc {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    padding: 0 $main-sections-padding;
   }
   &__main {
     position: relative;
@@ -107,6 +114,9 @@
   }
   &__content {
     padding: 10px $main-sections-padding;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
   }
   &__subtitle {
     font-size: 3rem;
@@ -146,7 +156,9 @@
     }
   }
   &__links {
+    flex-grow: 1;
     display: flex;
+    align-items: flex-end;
     a {
       width: 50%;
       text-align: center;
