@@ -2,7 +2,6 @@
   position: relative;
   background-color: white;
   color: black;
-  height: 600px;
   &__container {
     position: relative;
     width: 100%;
@@ -84,7 +83,7 @@
     &::after {
       content: '';
       display: block;
-      padding-top: 55%;
+      padding-top: 51%;
     }
   }
   &__photos {
@@ -159,15 +158,58 @@
     flex-grow: 1;
     display: flex;
     align-items: flex-end;
-    a {
-      width: 50%;
-      text-align: center;
-      border: 1px solid black;
-      margin: 0 5px;
+    justify-content: center;
+  }
+  &__link {
+    display: flex;
+    width: 50%;
+    max-width: 250px;
+    text-align: center;
+    border: 2px solid $main-font-color;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: $main-font-color;
+    overflow: hidden;
+    &-icon {
+      width: 30%;
       padding: 10px 0;
-      text-decoration: none;
-      font-size: 2rem;
-      color: black;
+      position: relative;
+      transform: translateX(calc(-100% - 20px));
+      transition: transform 0.15s ease-in;
+      will-change: transform;
+      i {
+        transform: scale(1.4);
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -5px;
+        height: 100%;
+        width: 10px;
+        transform: skewX(-30deg);
+        background-color: $main-font-color;
+      }
+    }
+    &:hover &-icon {
+      @include mq(l) {
+        transform: translateX(0);
+      }
+    }
+    &-text {
+      position: relative;
+      width: 70%;
+      text-align: center;
+      padding: 10px 0;
+      left: -15%;
+      transition: left 0.15s ease-in;
+      will-change: left;
+    }
+    &:hover &-text {
+      @include mq(l) {
+        left: 0;
+      }
     }
   }
   &__switches {

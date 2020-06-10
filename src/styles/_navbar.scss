@@ -7,6 +7,7 @@
   z-index: 100;
   height: $navbar-height;
   padding: 10px;
+  user-select: none;
   @include mq(l) {
     height: $navbar-height-l;
   }
