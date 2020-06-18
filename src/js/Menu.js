@@ -15,7 +15,7 @@ class Menu {
   scrollToSection(sectionName) {
     if (!this.scrolling) {
       const section = document.querySelector(`.${sectionName}`);
-      scroll(section, 500);
+      scroll(section);
       this.scrolling = true;
       setTimeout(() => (this.scrolling = false), 500);
     }
@@ -27,13 +27,13 @@ class Menu {
       this.mobileNavbar.classList.toggle('active');
     });
 
-    this.desktopItems.forEach(item =>
+    this.desktopItems.forEach((item) =>
       item.addEventListener('click', () =>
         this.scrollToSection(item.dataset.section),
       ),
     );
 
-    this.mobileItems.forEach(item =>
+    this.mobileItems.forEach((item) =>
       item.addEventListener('click', () => {
         this.scrollToSection(item.dataset.section);
         this.mobileNavbar.classList.remove('active');

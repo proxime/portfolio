@@ -94,7 +94,7 @@ class ProjectSlider {
   }
 
   changeSlide(slideNumber) {
-    scroll(document.querySelector('.projects'), 300, -this.slider.offsetTop);
+    scroll(document.querySelector('.projects'), -this.slider.offsetTop);
     this.container.style.transition = `transform ${
       Math.abs(this.actuallSlide - slideNumber) * 0.2
     }s ease-in`;
