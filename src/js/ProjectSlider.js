@@ -4,16 +4,16 @@ import chinczykImage1 from '../images/slider-chinczyk-1.PNG';
 import chinczykImage2 from '../images/slider-chinczyk-2.PNG';
 import chinczykImage3 from '../images/slider-chinczyk-3.PNG';
 
+import memory1 from '../images/slider-memory-1.PNG';
+import memory2 from '../images/slider-memory-2.PNG';
+import memory3 from '../images/slider-memory-3.PNG';
+
 import i20481 from '../images/slider-2048-1.PNG';
 import i20482 from '../images/slider-2048-2.PNG';
 
 import airImage1 from '../images/slider-air-1.PNG';
 import airImage2 from '../images/slider-air-2.PNG';
 import airImage3 from '../images/slider-air-3.PNG';
-
-import memtastyImage1 from '../images/slider-memtasty-1.PNG';
-import memtastyImage2 from '../images/slider-memtasty-2.PNG';
-import memtastyImage3 from '../images/slider-memtasty-3.PNG';
 
 import taskerImage1 from '../images/slider-tasker-1.PNG';
 import taskerImage2 from '../images/slider-tasker-2.PNG';
@@ -23,17 +23,17 @@ import talkerImage1 from '../images/slider-talker-1.PNG';
 import talkerImage2 from '../images/slider-talker-2.PNG';
 
 const chinczykImages = [chinczykImage1, chinczykImage2, chinczykImage3];
+const memoryImages = [memory1, memory2, memory3];
 const game2048Images = [i20481, i20482];
 const airImages = [airImage1, airImage2, airImage3];
-const memtastyImages = [memtastyImage1, memtastyImage2, memtastyImage3];
 const taskerImages = [taskerImage1, taskerImage2, taskerImage3];
 const talkerImages = [talkerImage1, talkerImage2];
 
 const images = [
   chinczykImages,
+  memoryImages,
   game2048Images,
   airImages,
-  memtastyImages,
   taskerImages,
   talkerImages,
 ];
@@ -43,9 +43,11 @@ class ProjectSlider {
     this.slider = document.querySelector('.slider');
     this.slides = document.querySelectorAll('.slider__slide');
     this.container = document.querySelector('.slider__container');
+    this.arrows = document.querySelectorAll('.slider__arrow');
     this.switches = [];
 
     this.actuallSlide = 0;
+    this.sliderLength = images.length;
     this.actualImages = [];
     for (let i = 0; i < images.length; ++i) {
       this.actualImages[i] = {
@@ -111,13 +113,20 @@ class ProjectSlider {
         switchEl.classList.remove('active');
       }
     });
+
+    this.arrows.forEach((arrow) => (arrow.disabled = false));
+    if (slideNumber === 0) {
+      document.querySelector('.slider__arrow--left').disabled = true;
+    } else if (slideNumber === this.sliderLength - 1) {
+      document.querySelector('.slider__arrow--right').disabled = true;
+    }
+
     this.actuallSlide = slideNumber;
   }
 
   createSliderSwitches() {
-    const sliderSwitchesEl = document.createElement('div');
-    sliderSwitchesEl.className = 'slider__switches';
-    this.slides.forEach((slide, index) => {
+    const sliderSwitchesEl = document.querySelector('.slider__switches');
+    this.slides.forEach((_, index) => {
       const slideSwitchEl = document.createElement('div');
       slideSwitchEl.className = `slider__switch ${
         index === this.actuallSlide ? 'active' : ''
@@ -126,12 +135,18 @@ class ProjectSlider {
       this.switches.push(slideSwitchEl);
       sliderSwitchesEl.appendChild(slideSwitchEl);
     });
-    document
-      .querySelector('.projects__container')
-      .appendChild(sliderSwitchesEl);
   }
 
   init() {
+    this.arrows.forEach((arrow) =>
+      arrow.addEventListener('click', () => {
+        const isLeft = arrow.dataset.direction === 'left';
+        this.changeSlide(
+          isLeft ? this.actuallSlide - 1 : this.actuallSlide + 1,
+        );
+      }),
+    );
+
     this.createSliderSwitches();
     this.apendImages();
   }

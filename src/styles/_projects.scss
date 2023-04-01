@@ -1,7 +1,7 @@
 .projects {
   position: relative;
-  background-color: white;
-  color: black;
+  background-color: $secondary-color;
+  color: white;
   &__container {
     position: relative;
     width: 100%;
@@ -48,6 +48,7 @@
     position: relative;
     left: 0;
     will-change: transform;
+    user-select: none;
   }
   &__slide {
     width: 100%;
@@ -143,6 +144,7 @@
     justify-content: center;
     align-items: center;
     margin: 5px;
+    background-color: white;
     img {
       width: 55%;
     }
@@ -171,6 +173,7 @@
     font-size: 2rem;
     color: $main-font-color;
     overflow: hidden;
+    background-color: $main-color;
     &-icon {
       width: 30%;
       padding: 10px 0;
@@ -212,8 +215,27 @@
       }
     }
   }
-  &__switches {
+  &__pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
+    gap: 12px;
+  }
+  &__arrow {
+    background: transparent;
+    border: none;
+    color: $main-font-color;
+    cursor: pointer;
+    display: flex;
+    font-size: 24px;
+    padding: 0;
+
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
+  &__switches {
     display: flex;
     justify-content: center;
   }
@@ -223,6 +245,7 @@
     box-shadow: 0 0 3px 0px black;
     margin: 0 3px;
     border-radius: 50%;
+    background-color: white;
     cursor: pointer;
     &.active {
       background-color: $main-font-color;

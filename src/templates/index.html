@@ -1,697 +1,1171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+  </head>
 
-  <title><%= htmlWebpackPlugin.options.title %></title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap&subset=latin-ext"
-    rel="stylesheet">
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__title">
+          <div class="navbar__name">
+            <p>Norbert</p>
+            <p>Kułak</p>
+          </div>
+        </div>
 
-</head>
+        <div class="navbar__mobile-button">
+          <button class="hamburger hamburger--elastic" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
 
-<body>
+        <div class="navbar-mobile">
+          <div class="navbar-mobile__list">
+            <ul>
+              <li class="navbar-mobile__item" data-section="about">O mnie</li>
+              <li class="navbar-mobile__item" data-section="skills">
+                Umiejętności
+              </li>
+              <li class="navbar-mobile__item" data-section="projects">
+                Projekty
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-mobile__links">
+            <ul>
+              <li class="navbar-mobile__link">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100005908657402"
+                  class="fb"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="navbar-mobile__link">
+                <a
+                  href="https://github.com/proxime"
+                  class="git"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-  <nav class="navbar">
-    <div class="navbar__container">
-      <div class="navbar__title">
-        <div class="navbar__name">
-          <p>Norbert</p>
-          <p>Kułak</p>
+        <div class="navbar__desktop">
+          <div class="navbar__list">
+            <ul>
+              <li class="navbar__item" data-section="about">O mnie</li>
+              <li class="navbar__item" data-section="skills">Umiejętności</li>
+              <li class="navbar__item" data-section="projects">Projekty</li>
+            </ul>
+          </div>
+
+          <div class="navbar__links">
+            <ul>
+              <li class="navbar__link">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100005908657402"
+                  class="fb"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="navbar__link">
+                <a
+                  href="https://github.com/proxime"
+                  class="git"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </nav>
 
-      <div class="navbar__mobile-button">
-        <button class="hamburger hamburger--elastic" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      </div>
+    <header class="letter-anim-container">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 510.89 250"
+        enable-background="new 0 0 510.89 250"
+        xml:space="preserve"
+      >
+        <g id="belt0" class="belt">
+          <rect x="402.48" y="20.64" fill="#34495E" width="62.71" height="12" />
+          <rect x="334.82" y="20.64" fill="#34495E" width="62.71" height="12" />
+          <rect x="291.61" y="20.64" fill="#34495E" width="38.25" height="12" />
+          <rect x="223.95" y="20.64" fill="#34495E" width="62.71" height="12" />
+          <rect x="88.61" y="20.64" fill="#34495E" width="130.39" height="12" />
+        </g>
+        <g id="betl1" class="belt">
+          <rect x="204.41" y="37.64" fill="#1ABC9C" width="39.92" height="12" />
+          <rect x="267.14" y="37.64" fill="#3498DB" width="38.02" height="12" />
+          <rect x="249.33" y="37.64" fill="#34495E" width="13" height="12" />
+          <rect x="310.16" y="37.64" fill="#34495E" width="19.01" height="12" />
+          <rect x="334.17" y="37.64" fill="#34495E" width="62.71" height="12" />
+          <rect x="401.88" y="37.64" fill="#34495E" width="4.98" height="12" />
+          <rect x="411.86" y="37.64" fill="#34495E" width="43.95" height="12" />
+          <rect x="180.4" y="37.64" fill="#34495E" width="19.01" height="12" />
+          <rect x="105.08" y="37.64" fill="#34495E" width="70.32" height="12" />
+          <rect x="24.76" y="37.64" fill="#34495E" width="75.32" height="12" />
+        </g>
+        <g id="belt2" class="belt">
+          <rect x="267.14" y="54.64" fill="#9B59B6" width="38.02" height="12" />
+          <rect x="204.41" y="54.64" fill="#E74C3C" width="45.62" height="12" />
+          <rect x="253.88" y="54.64" fill="#34495E" width="8.44" height="12" />
+          <rect x="309.97" y="54.64" fill="#34495E" width="36.54" height="12" />
+          <rect x="351.5" y="54.64" fill="#34495E" width="36.54" height="12" />
+          <rect x="393.02" y="54.64" fill="#34495E" width="36.54" height="12" />
+          <rect x="162.87" y="54.64" fill="#34495E" width="36.54" height="12" />
+          <rect x="81.32" y="54.64" fill="#34495E" width="76.55" height="12" />
+          <rect x="39.78" y="54.64" fill="#34495E" width="36.54" height="12" />
+        </g>
+        <g id="betl3" class="belt">
+          <rect x="204.41" y="71.64" fill="#1ABC9C" width="22.81" height="12" />
+          <rect x="232.22" y="71.64" fill="#3498DB" width="22.67" height="12" />
+          <rect x="267.14" y="71.64" fill="#1ABC9C" width="38.02" height="12" />
+          <rect x="259" y="71.64" fill="#34495E" width="3.33" height="12" />
+          <rect x="310.16" y="71.64" fill="#34495E" width="38.02" height="12" />
+          <rect x="353.18" y="71.64" fill="#34495E" width="48.7" height="12" />
+          <rect x="406.88" y="71.64" fill="#34495E" width="66.99" height="12" />
+          <rect x="176.59" y="71.64" fill="#34495E" width="22.81" height="12" />
+          <rect x="114.11" y="71.64" fill="#34495E" width="57.48" height="12" />
+          <rect x="46.15" y="71.64" fill="#34495E" width="62.96" height="12" />
+        </g>
+        <g id="belt4" class="belt">
+          <rect x="204.31" y="88.64" fill="#3498DB" width="39.25" height="12" />
+          <rect x="249.28" y="88.64" fill="#9B59B6" width="11" height="12" />
+          <rect x="267.14" y="88.64" fill="#3498DB" width="12" height="12" />
+          <rect x="284.14" y="88.64" fill="#E74C3C" width="21.02" height="12" />
+          <rect x="336.18" y="88.64" fill="#34495E" width="60.7" height="12" />
+          <rect x="310.16" y="88.64" fill="#34495E" width="21.02" height="12" />
+          <rect x="401.88" y="88.64" fill="#34495E" width="41.57" height="12" />
+          <rect x="448.45" y="88.64" fill="#34495E" width="25.42" height="12" />
+          <rect x="162.87" y="88.64" fill="#34495E" width="36.54" height="12" />
+          <rect x="145.97" y="88.64" fill="#34495E" width="12" height="12" />
+          <rect x="96.05" y="88.64" fill="#34495E" width="45.56" height="12" />
+          <rect x="24.76" y="88.64" fill="#34495E" width="67.06" height="12" />
+        </g>
+        <g id="belt5" class="belt">
+          <rect
+            x="204.41"
+            y="105.64"
+            fill="#1ABC9C"
+            width="57.73"
+            height="12"
+          />
+          <rect
+            x="267.14"
+            y="105.64"
+            fill="#9B59B6"
+            width="38.02"
+            height="12"
+          />
+          <rect
+            x="310.16"
+            y="105.64"
+            fill="#34495E"
+            width="69.61"
+            height="12"
+          />
+          <rect
+            x="384.77"
+            y="105.64"
+            fill="#34495E"
+            width="19.01"
+            height="12"
+          />
+          <rect
+            x="408.78"
+            y="105.64"
+            fill="#34495E"
+            width="47.03"
+            height="12"
+          />
+          <rect
+            x="151.97"
+            y="105.64"
+            fill="#34495E"
+            width="47.44"
+            height="12"
+          />
+          <rect x="96.05" y="105.64" fill="#34495E" width="50.92" height="12" />
+          <rect x="39.78" y="105.64" fill="#34495E" width="52.05" height="12" />
+        </g>
+        <g id="belt6" class="belt">
+          <rect
+            x="204.41"
+            y="122.64"
+            fill="#E74C3C"
+            width="36.59"
+            height="12"
+          />
+          <rect
+            x="246.98"
+            y="122.64"
+            fill="#9B59B6"
+            width="26.16"
+            height="12"
+          />
+          <rect
+            x="278.07"
+            y="122.64"
+            fill="#1ABC9C"
+            width="27.09"
+            height="12"
+          />
+          <rect x="310.09" y="122.64" fill="#34495E" width="9.57" height="12" />
+          <rect
+            x="324.59"
+            y="122.64"
+            fill="#34495E"
+            width="55.18"
+            height="12"
+          />
+          <rect x="384.7" y="122.64" fill="#34495E" width="67.78" height="12" />
+          <rect
+            x="171.59"
+            y="122.64"
+            fill="#34495E"
+            width="27.59"
+            height="12"
+          />
+          <rect
+            x="111.19"
+            y="122.64"
+            fill="#34495E"
+            width="55.18"
+            height="12"
+          />
+          <rect x="51.04" y="122.64" fill="#34495E" width="55.18" height="12" />
+        </g>
+        <g id="belt7" class="belt">
+          <rect x="204.31" y="139.64" fill="#1ABC9C" width="12" height="12" />
+          <rect x="221.7" y="139.64" fill="#9B59B6" width="19.3" height="12" />
+          <rect
+            x="246.98"
+            y="139.64"
+            fill="#3498DB"
+            width="58.18"
+            height="12"
+          />
+          <rect
+            x="311.14"
+            y="139.64"
+            fill="#34495E"
+            width="25.04"
+            height="12"
+          />
+          <rect x="342.16" y="139.64" fill="#34495E" width="64.7" height="12" />
+          <rect
+            x="412.84"
+            y="139.64"
+            fill="#34495E"
+            width="52.47"
+            height="12"
+          />
+          <rect
+            x="173.87"
+            y="139.64"
+            fill="#34495E"
+            width="25.04"
+            height="12"
+          />
+          <rect
+            x="121.51"
+            y="139.64"
+            fill="#34495E"
+            width="46.97"
+            height="12"
+          />
+          <rect x="30.47" y="139.64" fill="#34495E" width="85.18" height="12" />
+        </g>
+        <g id="belt8" class="belt">
+          <rect
+            x="204.41"
+            y="156.64"
+            fill="#1ABC9C"
+            width="36.59"
+            height="12"
+          />
+          <rect x="286.86" y="156.64" fill="#1ABC9C" width="18.3" height="12" />
+          <rect x="262.92" y="156.64" fill="#E74C3C" width="18.3" height="12" />
+          <rect x="249.28" y="156.64" fill="#3498DB" width="7.75" height="12" />
+          <rect x="310.8" y="156.64" fill="#34495E" width="40.7" height="12" />
+          <rect x="355.91" y="156.64" fill="#34495E" width="12" height="12" />
+          <rect
+            x="372.71"
+            y="156.64"
+            fill="#34495E"
+            width="50.63"
+            height="12"
+          />
+          <rect
+            x="428.45"
+            y="156.64"
+            fill="#34495E"
+            width="58.06"
+            height="12"
+          />
+          <rect x="158.97" y="156.64" fill="#34495E" width="40.7" height="12" />
+          <rect
+            x="138.78"
+            y="156.64"
+            fill="#34495E"
+            width="15.45"
+            height="12"
+          />
+          <rect x="93.47" y="156.64" fill="#34495E" width="40.7" height="12" />
+          <rect x="58.05" y="156.64" fill="#34495E" width="30.56" height="12" />
+        </g>
+        <g id="belt9" class="belt">
+          <rect
+            x="204.41"
+            y="173.64"
+            fill="#E74C3C"
+            width="24.71"
+            height="12"
+          />
+          <rect x="234.12" y="173.64" fill="#3498DB" width="6.88" height="12" />
+          <rect x="279.26" y="173.64" fill="#E74C3C" width="25.9" height="12" />
+          <rect
+            x="254.78"
+            y="173.64"
+            fill="#9B59B6"
+            width="19.72"
+            height="12"
+          />
+          <rect x="246.11" y="173.64" fill="#34495E" width="3.83" height="12" />
+          <rect
+            x="309.92"
+            y="173.64"
+            fill="#34495E"
+            width="47.23"
+            height="12"
+          />
+          <rect
+            x="361.91"
+            y="173.64"
+            fill="#34495E"
+            width="77.17"
+            height="12"
+          />
+          <rect
+            x="443.84"
+            y="173.64"
+            fill="#34495E"
+            width="33.36"
+            height="12"
+          />
+          <rect
+            x="125.99"
+            y="173.64"
+            fill="#34495E"
+            width="73.02"
+            height="12"
+          />
+          <rect x="73.37" y="173.64" fill="#34495E" width="47.23" height="12" />
+        </g>
+        <g id="belt10" class="belt">
+          <rect
+            x="204.41"
+            y="190.64"
+            fill="#9B59B6"
+            width="36.59"
+            height="12"
+          />
+          <rect x="260.06" y="190.64" fill="#1ABC9C" width="45.1" height="12" />
+          <rect x="246.11" y="190.64" fill="#34495E" width="8.78" height="12" />
+          <rect x="310.34" y="190.64" fill="#34495E" width="12" height="12" />
+          <rect
+            x="327.51"
+            y="190.64"
+            fill="#34495E"
+            width="62.71"
+            height="12"
+          />
+          <rect
+            x="395.41"
+            y="190.64"
+            fill="#34495E"
+            width="34.15"
+            height="12"
+          />
+          <rect x="434.94" y="190.64" fill="#34495E" width="45.1" height="12" />
+          <rect
+            x="166.37"
+            y="190.64"
+            fill="#34495E"
+            width="32.93"
+            height="12"
+          />
+          <rect x="98.55" y="190.64" fill="#34495E" width="62.71" height="12" />
+          <rect x="73.05" y="190.64" fill="#34495E" width="20.39" height="12" />
+        </g>
+        <g id="belt11" class="belt">
+          <rect
+            x="264.64"
+            y="207.64"
+            fill="#E74C3C"
+            width="40.93"
+            height="12"
+          />
+          <rect
+            x="204.41"
+            y="207.64"
+            fill="#3498DB"
+            width="12.86"
+            height="12"
+          />
+          <rect
+            x="221.27"
+            y="207.64"
+            fill="#1ABC9C"
+            width="19.73"
+            height="12"
+          />
+          <rect x="310.1" y="207.64" fill="#34495E" width="14" height="12" />
+          <rect
+            x="328.63"
+            y="207.64"
+            fill="#34495E"
+            width="71.87"
+            height="12"
+          />
+          <rect
+            x="405.03"
+            y="207.64"
+            fill="#34495E"
+            width="60.29"
+            height="12"
+          />
+          <rect
+            x="126.94"
+            y="207.64"
+            fill="#34495E"
+            width="71.87"
+            height="12"
+          />
+          <rect x="78.63" y="207.64" fill="#34495E" width="42.71" height="12" />
+          <rect x="246.11" y="207.64" fill="#34495E" width="14" height="12" />
+        </g>
+        <g id="balt12" class="belt">
+          <rect
+            x="393.19"
+            y="224.64"
+            fill="#34495E"
+            width="60.29"
+            height="12"
+          />
+          <rect x="327" y="224.64" fill="#34495E" width="60.29" height="12" />
+          <rect x="282.61" y="224.64" fill="#34495E" width="38.5" height="12" />
+          <rect
+            x="192.05"
+            y="224.64"
+            fill="#34495E"
+            width="84.66"
+            height="12"
+          />
+          <rect
+            x="118.83"
+            y="224.64"
+            fill="#34495E"
+            width="67.32"
+            height="12"
+          />
+        </g>
+      </svg>
+    </header>
 
-      <div class="navbar-mobile">
-        <div class="navbar-mobile__list">
-          <ul>
-            <li class="navbar-mobile__item" data-section="about">O mnie</li>
-            <li class="navbar-mobile__item" data-section="skills">Umiejętności</li>
-            <li class="navbar-mobile__item" data-section="projects">Projekty</li>
-          </ul>
+    <main>
+      <section class="about">
+        <div class="about__container">
+          <div class="about__text">
+            <div class="about__title">
+              <h1 class="about__name">
+                Kilka słów o <span class="orange">mnie</span>
+              </h1>
+            </div>
+            <div class="about__content">
+              <p>Cześć,</p>
+              <p class="about__paragraph">
+                mam na imię Norbert, mam 22 lata. Jestem Frond-End Developerem.
+                Moja przygoda z programowaniem rozpoczęła się 6 lat temu, gdy
+                zacząłem naukę w technikum na profilu informatycznym.
+              </p>
+              <p class="about__paragraph">
+                W całej swojej karierze miałem styczność z wieloma narzędziami,
+                tworzyłem aplikacje przy uzyciu REST, oraz GraphQL. Głównie
+                pracuję z bibloteką React, do mniejszych projektów wykorzystuję
+                vanilla JS/TS i Webpack. Mimo tego że głównie pracuję na
+                froncie, miałem dużo styczności z technologiami backendowymi,
+                przez pewnien okres mojej kariery nawet pracowałem jako
+                fullstack.
+              </p>
+              <p class="about__paragraph">
+                Uważam się za osobę, która w pełni potrafi pracować
+                samodzielnie. Umiem odnaleźć się w wiekszych zespołach, chętnie
+                dzielę się posiadaną wiedzą.
+              </p>
+              <p class="about__paragraph">
+                Wszystkie moje prywatne projekty możesz znaleźć na moim GitHub,
+                te, które zdecydowałem się wrzucić na hostingi, znajdziesz w
+                sekcji PROJEKTY.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="navbar-mobile__links">
-          <ul>
-            <li class="navbar-mobile__link">
-              <a href="https://www.facebook.com/profile.php?id=100005908657402" class="fb" target="_blank">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li class="navbar-mobile__link">
-              <a href="https://github.com/proxime" class="git" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          </ul>
+      </section>
+
+      <section class="skills">
+        <div class="skills__bg">
+          <div class="skills__bg-image"></div>
+          <div class="skills__bg-gradient"></div>
         </div>
-      </div>
-
-      <div class="navbar__desktop">
-
-        <div class="navbar__list">
-          <ul>
-            <li class="navbar__item" data-section="about">O mnie</li>
-            <li class="navbar__item" data-section="skills">Umiejętności</li>
-            <li class="navbar__item" data-section="projects">Projekty</li>
-          </ul>
-        </div>
-
-        <div class="navbar__links">
-          <ul>
-            <li class="navbar__link">
-              <a href="https://www.facebook.com/profile.php?id=100005908657402" class="fb" target="_blank">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li class="navbar__link">
-              <a href="https://github.com/proxime" class="git" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <header class="letter-anim-container">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      viewBox="0 0 510.89 250" enable-background="new 0 0 510.89 250" xml:space="preserve">
-      <g id="belt0" class="belt">
-        <rect x="402.48" y="20.64" fill="#34495E" width="62.71" height="12" />
-        <rect x="334.82" y="20.64" fill="#34495E" width="62.71" height="12" />
-        <rect x="291.61" y="20.64" fill="#34495E" width="38.25" height="12" />
-        <rect x="223.95" y="20.64" fill="#34495E" width="62.71" height="12" />
-        <rect x="88.61" y="20.64" fill="#34495E" width="130.39" height="12" />
-      </g>
-      <g id="betl1" class="belt">
-        <rect x="204.41" y="37.64" fill="#1ABC9C" width="39.92" height="12" />
-        <rect x="267.14" y="37.64" fill="#3498DB" width="38.02" height="12" />
-        <rect x="249.33" y="37.64" fill="#34495E" width="13" height="12" />
-        <rect x="310.16" y="37.64" fill="#34495E" width="19.01" height="12" />
-        <rect x="334.17" y="37.64" fill="#34495E" width="62.71" height="12" />
-        <rect x="401.88" y="37.64" fill="#34495E" width="4.98" height="12" />
-        <rect x="411.86" y="37.64" fill="#34495E" width="43.95" height="12" />
-        <rect x="180.4" y="37.64" fill="#34495E" width="19.01" height="12" />
-        <rect x="105.08" y="37.64" fill="#34495E" width="70.32" height="12" />
-        <rect x="24.76" y="37.64" fill="#34495E" width="75.32" height="12" />
-      </g>
-      <g id="belt2" class="belt">
-        <rect x="267.14" y="54.64" fill="#9B59B6" width="38.02" height="12" />
-        <rect x="204.41" y="54.64" fill="#E74C3C" width="45.62" height="12" />
-        <rect x="253.88" y="54.64" fill="#34495E" width="8.44" height="12" />
-        <rect x="309.97" y="54.64" fill="#34495E" width="36.54" height="12" />
-        <rect x="351.5" y="54.64" fill="#34495E" width="36.54" height="12" />
-        <rect x="393.02" y="54.64" fill="#34495E" width="36.54" height="12" />
-        <rect x="162.87" y="54.64" fill="#34495E" width="36.54" height="12" />
-        <rect x="81.32" y="54.64" fill="#34495E" width="76.55" height="12" />
-        <rect x="39.78" y="54.64" fill="#34495E" width="36.54" height="12" />
-      </g>
-      <g id="betl3" class="belt">
-        <rect x="204.41" y="71.64" fill="#1ABC9C" width="22.81" height="12" />
-        <rect x="232.22" y="71.64" fill="#3498DB" width="22.67" height="12" />
-        <rect x="267.14" y="71.64" fill="#1ABC9C" width="38.02" height="12" />
-        <rect x="259" y="71.64" fill="#34495E" width="3.33" height="12" />
-        <rect x="310.16" y="71.64" fill="#34495E" width="38.02" height="12" />
-        <rect x="353.18" y="71.64" fill="#34495E" width="48.7" height="12" />
-        <rect x="406.88" y="71.64" fill="#34495E" width="66.99" height="12" />
-        <rect x="176.59" y="71.64" fill="#34495E" width="22.81" height="12" />
-        <rect x="114.11" y="71.64" fill="#34495E" width="57.48" height="12" />
-        <rect x="46.15" y="71.64" fill="#34495E" width="62.96" height="12" />
-      </g>
-      <g id="belt4" class="belt">
-        <rect x="204.31" y="88.64" fill="#3498DB" width="39.25" height="12" />
-        <rect x="249.28" y="88.64" fill="#9B59B6" width="11" height="12" />
-        <rect x="267.14" y="88.64" fill="#3498DB" width="12" height="12" />
-        <rect x="284.14" y="88.64" fill="#E74C3C" width="21.02" height="12" />
-        <rect x="336.18" y="88.64" fill="#34495E" width="60.7" height="12" />
-        <rect x="310.16" y="88.64" fill="#34495E" width="21.02" height="12" />
-        <rect x="401.88" y="88.64" fill="#34495E" width="41.57" height="12" />
-        <rect x="448.45" y="88.64" fill="#34495E" width="25.42" height="12" />
-        <rect x="162.87" y="88.64" fill="#34495E" width="36.54" height="12" />
-        <rect x="145.97" y="88.64" fill="#34495E" width="12" height="12" />
-        <rect x="96.05" y="88.64" fill="#34495E" width="45.56" height="12" />
-        <rect x="24.76" y="88.64" fill="#34495E" width="67.06" height="12" />
-      </g>
-      <g id="belt5" class="belt">
-        <rect x="204.41" y="105.64" fill="#1ABC9C" width="57.73" height="12" />
-        <rect x="267.14" y="105.64" fill="#9B59B6" width="38.02" height="12" />
-        <rect x="310.16" y="105.64" fill="#34495E" width="69.61" height="12" />
-        <rect x="384.77" y="105.64" fill="#34495E" width="19.01" height="12" />
-        <rect x="408.78" y="105.64" fill="#34495E" width="47.03" height="12" />
-        <rect x="151.97" y="105.64" fill="#34495E" width="47.44" height="12" />
-        <rect x="96.05" y="105.64" fill="#34495E" width="50.92" height="12" />
-        <rect x="39.78" y="105.64" fill="#34495E" width="52.05" height="12" />
-      </g>
-      <g id="belt6" class="belt">
-        <rect x="204.41" y="122.64" fill="#E74C3C" width="36.59" height="12" />
-        <rect x="246.98" y="122.64" fill="#9B59B6" width="26.16" height="12" />
-        <rect x="278.07" y="122.64" fill="#1ABC9C" width="27.09" height="12" />
-        <rect x="310.09" y="122.64" fill="#34495E" width="9.57" height="12" />
-        <rect x="324.59" y="122.64" fill="#34495E" width="55.18" height="12" />
-        <rect x="384.7" y="122.64" fill="#34495E" width="67.78" height="12" />
-        <rect x="171.59" y="122.64" fill="#34495E" width="27.59" height="12" />
-        <rect x="111.19" y="122.64" fill="#34495E" width="55.18" height="12" />
-        <rect x="51.04" y="122.64" fill="#34495E" width="55.18" height="12" />
-      </g>
-      <g id="belt7" class="belt">
-        <rect x="204.31" y="139.64" fill="#1ABC9C" width="12" height="12" />
-        <rect x="221.7" y="139.64" fill="#9B59B6" width="19.3" height="12" />
-        <rect x="246.98" y="139.64" fill="#3498DB" width="58.18" height="12" />
-        <rect x="311.14" y="139.64" fill="#34495E" width="25.04" height="12" />
-        <rect x="342.16" y="139.64" fill="#34495E" width="64.7" height="12" />
-        <rect x="412.84" y="139.64" fill="#34495E" width="52.47" height="12" />
-        <rect x="173.87" y="139.64" fill="#34495E" width="25.04" height="12" />
-        <rect x="121.51" y="139.64" fill="#34495E" width="46.97" height="12" />
-        <rect x="30.47" y="139.64" fill="#34495E" width="85.18" height="12" />
-      </g>
-      <g id="belt8" class="belt">
-        <rect x="204.41" y="156.64" fill="#1ABC9C" width="36.59" height="12" />
-        <rect x="286.86" y="156.64" fill="#1ABC9C" width="18.3" height="12" />
-        <rect x="262.92" y="156.64" fill="#E74C3C" width="18.3" height="12" />
-        <rect x="249.28" y="156.64" fill="#3498DB" width="7.75" height="12" />
-        <rect x="310.8" y="156.64" fill="#34495E" width="40.7" height="12" />
-        <rect x="355.91" y="156.64" fill="#34495E" width="12" height="12" />
-        <rect x="372.71" y="156.64" fill="#34495E" width="50.63" height="12" />
-        <rect x="428.45" y="156.64" fill="#34495E" width="58.06" height="12" />
-        <rect x="158.97" y="156.64" fill="#34495E" width="40.7" height="12" />
-        <rect x="138.78" y="156.64" fill="#34495E" width="15.45" height="12" />
-        <rect x="93.47" y="156.64" fill="#34495E" width="40.7" height="12" />
-        <rect x="58.05" y="156.64" fill="#34495E" width="30.56" height="12" />
-      </g>
-      <g id="belt9" class="belt">
-        <rect x="204.41" y="173.64" fill="#E74C3C" width="24.71" height="12" />
-        <rect x="234.12" y="173.64" fill="#3498DB" width="6.88" height="12" />
-        <rect x="279.26" y="173.64" fill="#E74C3C" width="25.9" height="12" />
-        <rect x="254.78" y="173.64" fill="#9B59B6" width="19.72" height="12" />
-        <rect x="246.11" y="173.64" fill="#34495E" width="3.83" height="12" />
-        <rect x="309.92" y="173.64" fill="#34495E" width="47.23" height="12" />
-        <rect x="361.91" y="173.64" fill="#34495E" width="77.17" height="12" />
-        <rect x="443.84" y="173.64" fill="#34495E" width="33.36" height="12" />
-        <rect x="125.99" y="173.64" fill="#34495E" width="73.02" height="12" />
-        <rect x="73.37" y="173.64" fill="#34495E" width="47.23" height="12" />
-      </g>
-      <g id="belt10" class="belt">
-        <rect x="204.41" y="190.64" fill="#9B59B6" width="36.59" height="12" />
-        <rect x="260.06" y="190.64" fill="#1ABC9C" width="45.1" height="12" />
-        <rect x="246.11" y="190.64" fill="#34495E" width="8.78" height="12" />
-        <rect x="310.34" y="190.64" fill="#34495E" width="12" height="12" />
-        <rect x="327.51" y="190.64" fill="#34495E" width="62.71" height="12" />
-        <rect x="395.41" y="190.64" fill="#34495E" width="34.15" height="12" />
-        <rect x="434.94" y="190.64" fill="#34495E" width="45.1" height="12" />
-        <rect x="166.37" y="190.64" fill="#34495E" width="32.93" height="12" />
-        <rect x="98.55" y="190.64" fill="#34495E" width="62.71" height="12" />
-        <rect x="73.05" y="190.64" fill="#34495E" width="20.39" height="12" />
-      </g>
-      <g id="belt11" class="belt">
-        <rect x="264.64" y="207.64" fill="#E74C3C" width="40.93" height="12" />
-        <rect x="204.41" y="207.64" fill="#3498DB" width="12.86" height="12" />
-        <rect x="221.27" y="207.64" fill="#1ABC9C" width="19.73" height="12" />
-        <rect x="310.1" y="207.64" fill="#34495E" width="14" height="12" />
-        <rect x="328.63" y="207.64" fill="#34495E" width="71.87" height="12" />
-        <rect x="405.03" y="207.64" fill="#34495E" width="60.29" height="12" />
-        <rect x="126.94" y="207.64" fill="#34495E" width="71.87" height="12" />
-        <rect x="78.63" y="207.64" fill="#34495E" width="42.71" height="12" />
-        <rect x="246.11" y="207.64" fill="#34495E" width="14" height="12" />
-      </g>
-      <g id="balt12" class="belt">
-        <rect x="393.19" y="224.64" fill="#34495E" width="60.29" height="12" />
-        <rect x="327" y="224.64" fill="#34495E" width="60.29" height="12" />
-        <rect x="282.61" y="224.64" fill="#34495E" width="38.5" height="12" />
-        <rect x="192.05" y="224.64" fill="#34495E" width="84.66" height="12" />
-        <rect x="118.83" y="224.64" fill="#34495E" width="67.32" height="12" />
-      </g>
-    </svg>
-  </header>
-
-  <main>
-    <section class="about">
-      <div class="about__container">
-        <div class="about__text">
-          <div class="about__title">
-            <h1 class="about__name">Kilka słów o <span class="orange">mnie</span>
+        <div class="skills__container">
+          <div class="skills__title">
+            <h1 class="skills__name">
+              Moje <span class="orange">umiejętności</span>
             </h1>
           </div>
-          <div class="about__content">
-            <p>Cześć,</p>
-            <p class="about__paragraph">mam na imię Norbert, mam 19 lat. Jestem Frond-End Developerem. Moja przygoda z
-              programowaniem rozpoczęła się
-              gdy zacząłem naukę w technikum na profilu informatycznym.
-            </p>
-            <p class="about__paragraph"> Na początku uczyłem się według szkolnego systemu
-              nauczania, w pewnym momencie przestało mi to przynosić satysfakcję. Zacząłem pogłębiać swoją wiedzę na
-              YouTube, poznałem wiele wartościowych kanałów między innymi Traversy Media. Swoją wiedzę czerpałem także z
-              kilku kursów na Udemy</p>
-            <p class="about__paragraph">Aktualnie szukam pracy jako Junior Front-End Developer. Moje projekty możesz
-              zobaczyć
-              w
-              sekcji
-              PROJEKTY.</p>
+          <div class="skills__items">
+            <div class="skills__item">
+              <div class="skills__item-image skills__html">
+                <img src=<%=require("../images/html-5.svg")%> />
+              </div>
+              <div class="skills__item-name">HTML5</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__css">
+                <img src=<%=require("../images/css-3.svg")%> />
+              </div>
+              <div class="skills__item-name">CSS3</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__js">
+                <img src=<%=require("../images/javascript.svg")%> />
+              </div>
+              <div class="skills__item-name">JavaScript</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__ts">
+                <img src=<%=require("../images/typescript.svg")%> />
+              </div>
+              <div class="skills__item-name">TypeScript</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__rwd">
+                <img src=<%=require("../images/rwd.svg")%> />
+              </div>
+              <div class="skills__item-name">RWD</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__react">
+                <img src=<%=require("../images/react.svg")%> />
+              </div>
+              <div class="skills__item-name">React</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__framer">
+                <img src=<%=require("../images/framer-motion.svg")%> />
+              </div>
+              <div class="skills__item-name">Framer</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__redux">
+                <img src=<%=require("../images/redux.svg")%> />
+              </div>
+              <div class="skills__item-name">Redux</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__hook-form">
+                <img src=<%=require("../images/hook-form.svg")%> />
+              </div>
+              <div class="skills__item-name">Hook Form</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__rest">
+                <img src=<%=require("../images/rest.svg")%> />
+              </div>
+              <div class="skills__item-name">Rest API</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__graph">
+                <img src=<%=require("../images/graphql.svg")%> />
+              </div>
+              <div class="skills__item-name">GraphQL</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__apollo">
+                <img src=<%=require("../images/apollo.svg")%> />
+              </div>
+              <div class="skills__item-name">Apollo</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__sass">
+                <img src=<%=require("../images/sass.svg")%> />
+              </div>
+              <div class="skills__item-name">Sass</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__git">
+                <img src=<%=require("../images/git-icon.svg")%> />
+              </div>
+              <div class="skills__item-name">Git</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__webpack">
+                <img src=<%=require("../images/webpack.svg")%> />
+              </div>
+              <div class="skills__item-name">Webpack</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__node">
+                <img src=<%=require("../images/nodejs-icon.svg")%> />
+              </div>
+              <div class="skills__item-name">NodeJS</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__npm">
+                <img src=<%=require("../images/npm.svg")%> />
+              </div>
+              <div class="skills__item-name">NPM</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__yarn">
+                <img src=<%=require("../images/yarn.svg")%> />
+              </div>
+              <div class="skills__item-name">Yarn</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__express">
+                <img src=<%=require("../images/express.svg")%> />
+              </div>
+              <div class="skills__item-name">Express</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__socket">
+                <img src=<%=require("../images/socket.io.svg")%> />
+              </div>
+              <div class="skills__item-name">Socket.io</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__mongodb">
+                <img src=<%=require("../images/mongodb.svg")%> />
+              </div>
+              <div class="skills__item-name">MongoDB</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__firebase">
+                <img src=<%=require("../images/firebase.svg")%> />
+              </div>
+              <div class="skills__item-name">Firebase</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__eslint">
+                <img src=<%=require("../images/eslint.svg")%> />
+              </div>
+              <div class="skills__item-name">ESlint</div>
+            </div>
+
+            <div class="skills__item">
+              <div class="skills__item-image skills__vsc">
+                <img src=<%=require("../images/vsc.svg")%> />
+              </div>
+              <div class="skills__item-name">VSC</div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="skills">
-      <div class="skills__bg">
-        <div class="skills__bg-image"></div>
-        <div class="skills__bg-gradient"></div>
-      </div>
-      <div class="skills__container">
-        <div class="skills__title">
-          <h1 class="skills__name">Moje <span class="orange">umiejętności</span>
-          </h1>
+      <section class="projects">
+        <div class="projects__container">
+          <div class="projects__title">
+            <h1 class="about__name">Projekty</h1>
+          </div>
+          <div class="slider">
+            <div class="slider__container">
+              <div class="slider__slide">
+                <div class="slider__title">Chińczyk</div>
+                <div class="slider__desc">
+                  Przeglądarkowa gra multiplayer na zasadach popularnej gry
+                  Chińczyk.
+                </div>
+                <div class="slider__main">
+                  <img draggable="false"
+                  src=<%=require("../images/slider-chinczyk-1.PNG")%>>
+                </div>
+                <div class="slider__photos"></div>
+                <div class="slider__content">
+                  <div class="slider__subtitle">Technologie</div>
+                  <div class="slider__technologies">
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/html-5.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/javascript.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/react.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/sass.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/redux.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/rwd.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/nodejs-icon.svg")%> />
+                    </div>
+                    <div class="slider__technology slider__technology--bigger">
+                      <img draggable="false"
+                      src=<%=require("../images/express.svg")%> />
+                    </div>
+                    <div class="slider__technology slider__technology--bigger">
+                      <img draggable="false"
+                      src=<%=require("../images/mongodb.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/socket.io.svg")%> />
+                    </div>
+                  </div>
+                  <div class="slider__links">
+                    <a
+                      href="https://chinczyk.onrender.com"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="slider__link-text">LIVE</div>
+                    </a>
+                    <a
+                      href="https://github.com/proxime/chinczyk"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <div class="slider__link-text">GitHub</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__slide">
+                <div class="slider__title">Memory</div>
+                <div class="slider__desc">
+                  Nieskomplikowana grą, która polega na zapamiętywaniu pozycji
+                  kart rozłożonych na planszy
+                </div>
+                <div class="slider__main">
+                  <img draggable="false"
+                  src=<%=require("../images/slider-memory-1.PNG")%>>
+                </div>
+                <div class="slider__photos"></div>
+                <div class="slider__content">
+                  <div class="slider__subtitle">Technologie</div>
+                  <div class="slider__technologies">
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/html-5.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/typescript.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/webpack.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/sass.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/rwd.svg")%> />
+                    </div>
+                  </div>
+                  <div class="slider__links">
+                    <a
+                      href="https://proxime.github.io/memory/"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="slider__link-text">LIVE</div>
+                    </a>
+                    <a
+                      href="https://github.com/proxime/memory"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <div class="slider__link-text">GitHub</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__slide">
+                <div class="slider__title">2048</div>
+                <div class="slider__desc">Przeglądarkowa gra logiczna.</div>
+                <div class="slider__main">
+                  <img draggable="false"
+                  src=<%=require("../images/slider-2048-1.PNG")%>>
+                </div>
+                <div class="slider__photos"></div>
+                <div class="slider__content">
+                  <div class="slider__subtitle">Technologie</div>
+                  <div class="slider__technologies">
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/html-5.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/javascript.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/webpack.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/sass.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/rwd.svg")%> />
+                    </div>
+                  </div>
+                  <div class="slider__links">
+                    <a
+                      href="https://proxime.github.io/2048/"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="slider__link-text">LIVE</div>
+                    </a>
+                    <a
+                      href="https://github.com/proxime/2048"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <div class="slider__link-text">GitHub</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__slide">
+                <div class="slider__title">Fresh Air Community</div>
+                <div class="slider__desc">
+                  Aplikacja, która pozwala na sprawdzenie indeksu jakości
+                  powietrza. Zawiera także ciekawe artykuły związane z ekologią.
+                </div>
+                <div class="slider__main">
+                  <img draggable="false"
+                  src=<%=require("../images/slider-air-1.PNG")%>>
+                </div>
+                <div class="slider__photos"></div>
+                <div class="slider__content">
+                  <div class="slider__subtitle">Technologie</div>
+                  <div class="slider__technologies">
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/html-5.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/javascript.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/react.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/sass.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/redux.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/rwd.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/nodejs-icon.svg")%> />
+                    </div>
+                    <div class="slider__technology slider__technology--bigger">
+                      <img draggable="false"
+                      src=<%=require("../images/express.svg")%> />
+                    </div>
+                    <div class="slider__technology slider__technology--bigger">
+                      <img draggable="false"
+                      src=<%=require("../images/mongodb.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/rest.svg")%> />
+                    </div>
+                  </div>
+                  <div class="slider__links">
+                    <a
+                      href="https://fresh-air-community.onrender.com/"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="slider__link-text">LIVE</div>
+                    </a>
+                    <a
+                      href="https://github.com/proxime/freshAirCommunity"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <div class="slider__link-text">GitHub</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__slide">
+                <div class="slider__title">Tasker</div>
+                <div class="slider__desc">
+                  Rozbudowana aplikacja todo, posiada wiele funkcjonalności.
+                </div>
+                <div class="slider__main">
+                  <img draggable="false"
+                  src=<%=require("../images/slider-tasker-1.PNG")%>>
+                </div>
+                <div class="slider__photos"></div>
+                <div class="slider__content">
+                  <div class="slider__subtitle">Technologie</div>
+                  <div class="slider__technologies">
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/html-5.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/javascript.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/react.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/sass.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/redux.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/rwd.svg")%> />
+                    </div>
+                  </div>
+                  <div class="slider__links">
+                    <a
+                      href="https://tasker-cd724.web.app/"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="slider__link-text">LIVE</div>
+                    </a>
+                    <a
+                      href="https://github.com/proxime/tasker"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <div class="slider__link-text">GitHub</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider__slide">
+                <div class="slider__title">Talker</div>
+                <div class="slider__desc">
+                  Chat internetowy. Wyszukuje osobę do rozmowy w czasie
+                  rzeczywistym.
+                </div>
+                <div class="slider__main">
+                  <img draggable="false"
+                  src=<%=require("../images/slider-talker-1.PNG")%>>
+                </div>
+                <div class="slider__photos"></div>
+                <div class="slider__content">
+                  <div class="slider__subtitle">Technologie</div>
+                  <div class="slider__technologies">
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/html-5.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/javascript.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/react.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/sass.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/redux.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/rwd.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/nodejs-icon.svg")%> />
+                    </div>
+                    <div class="slider__technology">
+                      <img draggable="false"
+                      src=<%=require("../images/socket.io.svg")%> />
+                    </div>
+                  </div>
+                  <div class="slider__links">
+                    <a
+                      href="https://talker-6b2z.onrender.com/"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="slider__link-text">LIVE</div>
+                    </a>
+                    <a
+                      href="https://github.com/proxime/talker"
+                      target="_blank"
+                      class="slider__link"
+                    >
+                      <div class="slider__link-icon">
+                        <i class="fab fa-github"></i>
+                      </div>
+                      <div class="slider__link-text">GitHub</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__pagination">
+            <button
+              class="slider__arrow slider__arrow--left"
+              data-direction="left"
+              disabled
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider__switches"></div>
+            <button
+              class="slider__arrow slider__arrow--right"
+              data-direction="right"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
-        <div class="skills__items">
+      </section>
+    </main>
 
-          <div class="skills__item">
-            <div class="skills__item-image skills__html">
-              <img src=<%=require("../images/html-5.svg")%> />
-            </div>
-            <div class="skills__item-name">HTML5</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__css">
-              <img src=<%=require("../images/css-3.svg")%> />
-            </div>
-            <div class="skills__item-name">CSS3</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__js">
-              <img src=<%=require("../images/javascript.svg")%> />
-            </div>
-            <div class="skills__item-name">JavaScript</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__rwd">
-              <img src=<%=require("../images/rwd.svg")%> />
-            </div>
-            <div class="skills__item-name">RWD</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__react">
-              <img src=<%=require("../images/react.svg")%> />
-            </div>
-            <div class="skills__item-name">React</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__redux">
-              <img src=<%=require("../images/redux.svg")%> />
-            </div>
-            <div class="skills__item-name">Redux</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__rest">
-              <img src=<%=require("../images/rest.svg")%> />
-            </div>
-            <div class="skills__item-name">Rest API</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__sass">
-              <img src=<%=require("../images/sass.svg")%> />
-            </div>
-            <div class="skills__item-name">Sass</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__git">
-              <img src=<%=require("../images/git-icon.svg")%> />
-            </div>
-            <div class="skills__item-name">Git</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__webpack">
-              <img src=<%=require("../images/webpack.svg")%> />
-            </div>
-            <div class="skills__item-name">Webpack</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__node">
-              <img src=<%=require("../images/nodejs-icon.svg")%> />
-            </div>
-            <div class="skills__item-name">NodeJS</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__npm">
-              <img src=<%=require("../images/npm.svg")%> />
-            </div>
-            <div class="skills__item-name">NPM</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__express">
-              <img src=<%=require("../images/express.svg")%> />
-            </div>
-            <div class="skills__item-name">Express</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__socket">
-              <img src=<%=require("../images/socket.io.svg")%> />
-            </div>
-            <div class="skills__item-name">Socket.io</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__mongodb">
-              <img src=<%=require("../images/mongodb.svg")%> />
-            </div>
-            <div class="skills__item-name">MongoDB</div>
-          </div>
-
-          <div class="skills__item">
-            <div class="skills__item-image skills__firebase">
-              <img src=<%=require("../images/firebase.svg")%> />
-            </div>
-            <div class="skills__item-name">Firebase</div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="projects">
-      <div class="projects__container">
-        <div class="projects__title">
-          <h1 class="about__name">Projekty
-          </h1>
-        </div>
-        <div class="slider">
-          <div class="slider__container">
-
-            <div class="slider__slide">
-              <div class="slider__title">Chińczyk</div>
-              <div class="slider__desc">Przeglądarkowa gra multiplayer na zasadach popularnej gry Chińczyk.</div>
-              <div class="slider__main">
-                <img src=<%=require("../images/slider-chinczyk-1.PNG")%>>
-              </div>
-              <div class="slider__photos"></div>
-              <div class="slider__content">
-                <div class="slider__subtitle">Technologie</div>
-                <div class="slider__technologies">
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/html-5.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/javascript.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/react.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/sass.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/redux.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/rwd.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/nodejs-icon.svg")%> />
-                  </div>
-                  <div class="slider__technology slider__technology--bigger">
-                    <img src=<%=require("../images/express.svg")%> />
-                  </div>
-                  <div class="slider__technology slider__technology--bigger">
-                    <img src=<%=require("../images/mongodb.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/socket.io.svg")%> />
-                  </div>
-                </div>
-                <div class="slider__links">
-                  <a href="http://chinczyk-game.herokuapp.com/" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fas fa-globe"></i></div>
-                    <div class="slider__link-text">LIVE</div>
-                  </a>
-                  <a href="https://github.com/proxime/chinczyk" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fab fa-github"></i></div>
-                    <div class="slider__link-text">GitHub</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider__slide">
-              <div class="slider__title">2048</div>
-              <div class="slider__desc">Przeglądarkowa gra logiczna.</div>
-              <div class="slider__main">
-                <img src=<%=require("../images/slider-2048-1.PNG")%>>
-              </div>
-              <div class="slider__photos"></div>
-              <div class="slider__content">
-                <div class="slider__subtitle">Technologie</div>
-                <div class="slider__technologies">
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/html-5.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/javascript.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/webpack.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/sass.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/rwd.svg")%> />
-                  </div>
-                </div>
-                <div class="slider__links">
-                  <a href="https://proxime.github.io/2048/" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fas fa-globe"></i></div>
-                    <div class="slider__link-text">LIVE</div>
-                  </a>
-                  <a href="https://github.com/proxime/2048" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fab fa-github"></i></div>
-                    <div class="slider__link-text">GitHub</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider__slide">
-              <div class="slider__title">Fresh Air Community</div>
-              <div class="slider__desc">Aplikacja, która pozwala na sprawdzenie indeksu jakości powietrza. Zawiera także
-                ciekawe artykuły związane z ekologią.</div>
-              <div class="slider__main">
-                <img src=<%=require("../images/slider-air-1.PNG")%>>
-              </div>
-              <div class="slider__photos"></div>
-              <div class="slider__content">
-                <div class="slider__subtitle">Technologie</div>
-                <div class="slider__technologies">
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/html-5.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/javascript.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/react.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/sass.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/redux.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/rwd.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/nodejs-icon.svg")%> />
-                  </div>
-                  <div class="slider__technology slider__technology--bigger">
-                    <img src=<%=require("../images/express.svg")%> />
-                  </div>
-                  <div class="slider__technology slider__technology--bigger">
-                    <img src=<%=require("../images/mongodb.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/rest.svg")%> />
-                  </div>
-                </div>
-                <div class="slider__links">
-                  <a href="https://fresh-air-community.herokuapp.com/" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fas fa-globe"></i></div>
-                    <div class="slider__link-text">LIVE</div>
-                  </a>
-                  <a href="https://github.com/proxime/freshAirCommunity" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fab fa-github"></i></div>
-                    <div class="slider__link-text">GitHub</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider__slide">
-              <div class="slider__title">MemTasty</div>
-              <div class="slider__desc">Strona, której tematem przewodnim są memy. Zalogwani użytkownicy mogą dodawać
-                swoje obrazy, filmy a także komentować i plusować inne posty.</div>
-              <div class="slider__main">
-                <img src=<%=require("../images/slider-memtasty-1.PNG")%>>
-              </div>
-              <div class="slider__photos"></div>
-              <div class="slider__content">
-                <div class="slider__subtitle">Technologie</div>
-                <div class="slider__technologies">
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/html-5.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/javascript.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/react.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/sass.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/redux.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/rwd.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/firebase.svg")%> />
-                  </div>
-                </div>
-                <div class="slider__links">
-                  <a href="https://memtasty.web.app/" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fas fa-globe"></i></div>
-                    <div class="slider__link-text">LIVE</div>
-                  </a>
-                  <a href="https://github.com/proxime/memtasty" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fab fa-github"></i></div>
-                    <div class="slider__link-text">GitHub</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider__slide">
-              <div class="slider__title">Tasker</div>
-              <div class="slider__desc">Rozbudowana aplikacja todo, posiada wiele funkcjonalności.</div>
-              <div class="slider__main">
-                <img src=<%=require("../images/slider-tasker-1.PNG")%>>
-              </div>
-              <div class="slider__photos"></div>
-              <div class="slider__content">
-                <div class="slider__subtitle">Technologie</div>
-                <div class="slider__technologies">
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/html-5.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/javascript.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/react.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/sass.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/redux.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/rwd.svg")%> />
-                  </div>
-                </div>
-                <div class="slider__links">
-                  <a href="https://tasker-cd724.web.app/" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fas fa-globe"></i></div>
-                    <div class="slider__link-text">LIVE</div>
-                  </a>
-                  <a href="https://github.com/proxime/tasker" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fab fa-github"></i></div>
-                    <div class="slider__link-text">GitHub</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="slider__slide">
-              <div class="slider__title">Talker</div>
-              <div class="slider__desc">Chat internetowy. Wyszukuje osobę do rozmowy w czasie rzeczywistym.</div>
-              <div class="slider__main">
-                <img src=<%=require("../images/slider-talker-1.PNG")%>>
-              </div>
-              <div class="slider__photos"></div>
-              <div class="slider__content">
-                <div class="slider__subtitle">Technologie</div>
-                <div class="slider__technologies">
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/html-5.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/javascript.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/react.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/sass.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/redux.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/rwd.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/nodejs-icon.svg")%> />
-                  </div>
-                  <div class="slider__technology">
-                    <img src=<%=require("../images/socket.io.svg")%> />
-                  </div>
-                </div>
-                <div class="slider__links">
-                  <a href="https://talker-app.herokuapp.com/" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fas fa-globe"></i></div>
-                    <div class="slider__link-text">LIVE</div>
-                  </a>
-                  <a href="https://github.com/proxime/talker" target="_blank" class="slider__link">
-                    <div class="slider__link-icon"><i class="fab fa-github"></i></div>
-                    <div class="slider__link-text">GitHub</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  </body>
 </html>

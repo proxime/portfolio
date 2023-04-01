@@ -118,23 +118,44 @@
   &__js {
     box-shadow: -2px 2px 0 2px #f7df1e;
   }
+  &__ts {
+    box-shadow: -2px 2px 0 2px #3178c6;
+  }
   &__rwd {
     box-shadow: -2px 2px 0 2px black;
   }
   &__react {
     box-shadow: -2px 2px 0 2px #61dafb;
   }
+  &__framer {
+    box-shadow: -2px 2px 0 2px #e129c5;
+  }
   &__redux {
     box-shadow: -2px 2px 0 2px #764abc;
   }
+  &__hook-form {
+    box-shadow: -2px 2px 0 2px #ec5990;
+    img {
+      width: 65%;
+    }
+  }
   &__rest {
     box-shadow: -2px 2px 0 2px green;
+  }
+  &__graph {
+    box-shadow: -2px 2px 0 2px #e535ab;
+  }
+  &__apollo {
+    box-shadow: -2px 2px 0 2px #112b49;
   }
   &__sass {
     box-shadow: -2px 2px 0 2px #cc6699;
   }
   &__webpack {
     box-shadow: -2px 2px 0 2px #8dd6f9;
+    img {
+      width: 65%;
+    }
   }
   &__git {
     box-shadow: -2px 2px 0 2px #f05032;
@@ -144,6 +165,12 @@
   }
   &__npm {
     box-shadow: -2px 2px 0 2px #cb3837;
+  }
+  &__yarn {
+    box-shadow: -2px 2px 0 2px #368fb9;
+    img {
+      width: 60%;
+    }
   }
   &__express {
     box-shadow: -2px 2px 0 2px black;
@@ -162,6 +189,18 @@
   }
   &__firebase {
     box-shadow: -2px 2px 0 2px #ffca28;
+  }
+  &__eslint {
+    box-shadow: -2px 2px 0 2px #8080f2;
+    img {
+      width: 65%;
+    }
+  }
+  &__vsc {
+    box-shadow: -2px 2px 0 2px #0077b8;
+    img {
+      width: 60%;
+    }
   }
   &__item-name {
     color: white;
