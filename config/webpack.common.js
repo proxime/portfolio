@@ -16,13 +16,13 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: paths.static,
-        to: 'assets',
+        to: '',
         ignore: ['*.DS_Store'],
       },
     ]),
     new HtmlWebpackPlugin({
-      title: 'Norbert Kułak',
-      favicon: paths.src + '/images/favicon.ico',
+      title: 'Norbert Kułak Portfolio',
+      favicon: paths.static + '/favicon.ico',
       template: paths.src + '/templates/index.html',
       filename: 'index.html',
     }),
