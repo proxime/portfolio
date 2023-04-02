@@ -15,6 +15,9 @@ import airImage1 from '../images/slider-air-1.PNG';
 import airImage2 from '../images/slider-air-2.PNG';
 import airImage3 from '../images/slider-air-3.PNG';
 
+import swImage1 from '../images/slider-sw-1.PNG';
+import swImage2 from '../images/slider-sw-2.PNG';
+
 import taskerImage1 from '../images/slider-tasker-1.PNG';
 import taskerImage2 from '../images/slider-tasker-2.PNG';
 import taskerImage3 from '../images/slider-tasker-3.PNG';
@@ -26,6 +29,7 @@ const chinczykImages = [chinczykImage1, chinczykImage2, chinczykImage3];
 const memoryImages = [memory1, memory2, memory3];
 const game2048Images = [i20481, i20482];
 const airImages = [airImage1, airImage2, airImage3];
+const swImages = [swImage1, swImage2];
 const taskerImages = [taskerImage1, taskerImage2, taskerImage3];
 const talkerImages = [talkerImage1, talkerImage2];
 
@@ -34,6 +38,7 @@ const images = [
   memoryImages,
   game2048Images,
   airImages,
+  swImages,
   taskerImages,
   talkerImages,
 ];
