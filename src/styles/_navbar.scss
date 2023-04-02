@@ -30,7 +30,7 @@
     @include mq(l) {
       font-size: 2.2rem;
     }
-    p:last-child {
+    span {
       letter-spacing: 3px;
       font-weight: normal;
     }

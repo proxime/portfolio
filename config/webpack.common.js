@@ -22,7 +22,7 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       title: 'Norbert Kułak Portfolio',
-      favicon: paths.static + '/favicon.ico',
+      favicon: paths.static + '/images/favicon.ico',
       template: paths.src + '/templates/index.html',
       filename: 'index.html',
     }),
