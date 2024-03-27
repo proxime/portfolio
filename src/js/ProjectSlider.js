@@ -1,5 +1,8 @@
 import scroll from './Scroll';
 
+import stronyImage1 from '../images/slider-strony-1.PNG';
+import stronyImage2 from '../images/slider-strony-2.PNG';
+
 import chinczykImage1 from '../images/slider-chinczyk-1.PNG';
 import chinczykImage2 from '../images/slider-chinczyk-2.PNG';
 import chinczykImage3 from '../images/slider-chinczyk-3.PNG';
@@ -25,6 +28,7 @@ import taskerImage3 from '../images/slider-tasker-3.PNG';
 import talkerImage1 from '../images/slider-talker-1.PNG';
 import talkerImage2 from '../images/slider-talker-2.PNG';
 
+const stronyImages = [stronyImage1, stronyImage2];
 const chinczykImages = [chinczykImage1, chinczykImage2, chinczykImage3];
 const memoryImages = [memory1, memory2, memory3];
 const game2048Images = [i20481, i20482];
@@ -34,6 +38,7 @@ const taskerImages = [taskerImage1, taskerImage2, taskerImage3];
 const talkerImages = [talkerImage1, talkerImage2];
 
 const images = [
+  stronyImages,
   chinczykImages,
   memoryImages,
   game2048Images,
